@@ -1,8 +1,0 @@
-[phases.setup]
-aptPkgs = ['maven', 'openjdk-17-jdk']
-
-[phases.build]
-cmds = ['mvn clean package -DskipTests']
-
-[start]
-cmd = 'java -jar -Dspring.profiles.active=prod target/*.jar'
